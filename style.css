@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+
+#grid-container {
+    width: 800px;
+    height: 640px;
+    margin-right: auto;
+    margin-left: auto;  
+    
+}
+#grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: repeat(var(--grid-rows), 0.5fr );
+    grid-template-columns: repeat(var(--grid-columns),0.5fr);
+}
+.box {
+    border: solid;
+    margin: 0.5px;
+    border-color: black;
+    transition-duration: 5s;
+    transition-property: all;
+    width: minmax(0, 0.5fr);
+    height: minmax(0, 0.5fr);
+}
+.fillin {
+    /* background-color: black; */
+    transition-duration: 0s;
+}
+.button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
